@@ -1,13 +1,15 @@
 import ReactLogo from './assets/react.svg?react';
-import './index.css';
+//import './index.css';
 
 export const App = () => {
+	const date = new Date().getFullYear(); // декларативный стиль
 	return (
 		<div className="App">
 			<header className="App-header">
+				{/* декларативный стиль от этой точки */}
 				<ReactLogo />
 				<p>
-					Edit <code>src/App.js</code> and save to 222 reload 2.
+					Edit <code>src/App.js</code> and save to reload.
 				</p>
 				<a
 					className="App-link"
@@ -17,6 +19,8 @@ export const App = () => {
 				>
 					Learn React
 				</a>
+				<p>{date} год</p>
+				{/* декларативный стиль до этой точки */}
 			</header>
 		</div>
 	);
